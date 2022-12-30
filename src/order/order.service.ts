@@ -89,6 +89,7 @@ export class OrderService {
 			.findById(_id)
 			.populate('orders.productId')
 			.exec()
+		console.log(_id)
 		return this.returnOrderFields(user.orders)
 	}
 }

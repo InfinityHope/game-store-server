@@ -14,7 +14,7 @@ export class UserModel extends TimeStamps {
 	email: string
 	@prop()
 	passwordHash: string
-	@prop({ type: () => [OrderModel], default: {} })
+	@prop({ type: () => [OrderModel], default: [] })
 	orders?: OrderModel[]
 	@prop({ ref: () => ProductModel, _id: false })
 	library?: Ref<ProductModel>[]
