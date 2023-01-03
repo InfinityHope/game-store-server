@@ -17,6 +17,7 @@ export class ProductService {
 		return products.map((product) => ({
 			_id: product._id,
 			title: product.title,
+			availability: product.availability,
 			releaseDate: product.releaseDate,
 			img: product.img,
 			price: product.price,
